@@ -3,6 +3,9 @@
 <head>
   <title>{{ page.title }}</title>
   <link rel="stylesheet" type="text/css" href="/css/main.css" />
+  {% if page.noindex %}
+  <meta name="robots" content="noindex" />
+  {% endif %}
   <meta charset="utf-8" />
 </head>
 <body>
